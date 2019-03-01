@@ -1,0 +1,44 @@
+/*头部区域*/
+#header{
+    border-bottom: 1px solid #ccc;
+    .container{
+        .row{
+            // 保证是子代  使用>
+            >div{
+                height: 40px;
+                line-height: 40px;
+                font-size: 12px;
+
+                a{
+                    color: #666;
+                    text-decoration: none;
+                }
+                .link{
+                    position: relative;
+                    display: block;
+                    img{
+                        position: absolute;
+                        top: 40px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        display: none;
+                    }
+                    &:hover{
+                        img{
+                            display: block;
+                        }
+                    }
+
+                }
+                &~div{
+                    border-left: 1px solid #ccc;
+                }
+                .btn-link{
+                    color: #666;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+}

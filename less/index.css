@@ -1,0 +1,34 @@
+/*头部区域*/
+#header {
+  border-bottom: 1px solid #ccc;
+}
+#header .container .row > div {
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+}
+#header .container .row > div a {
+  color: #666;
+  text-decoration: none;
+}
+#header .container .row > div .link {
+  position: relative;
+  display: block;
+}
+#header .container .row > div .link img {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+#header .container .row > div .link:hover img {
+  display: block;
+}
+#header .container .row > div ~ div {
+  border-left: 1px solid #ccc;
+}
+#header .container .row > div .btn-link {
+  color: #666;
+  text-decoration: none;
+}
